@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Världens bästa Caesar Sallad</title>
+    <link rel="stylesheet" href="../style/varfor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img id="logo" src="/bilder/logo.webp" alt="Logotyp"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="Varfor">Varför?</a></li>
+                    <li><a href="Topplista">Topplista</a></li>
+                    <li><a href="Det ultimata receptet">Det ultimata receptet</a></li>
+                    <li><a href="ROT-Avdrag">Caesarsallad och en kall</a></li>
+                    <li><a href="Kontakta oss">Senaste salladen/Salladsbloggen</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+
+        </nav>
+        <div class="textbox">
+            <h1>Varför Caesar Sallad?</h1>
+            
+            <p>Historien om den perfekta rätten har sina rötter i Spanien. I La Mata-trakten i Torrevieja fanns en liten restaurang som hette Nova Paka, döpt efter en tjeckisk liten stad. På menyn fanns varken hamburgare eller pizza, och jag blev tvungen att testa något nytt.</p>
+            
+            <p>Kvinnan som drev stället, som såg ut på pricken som Eva Röse fast en tjeckisk version, kom till vårt bord. Blygsamt frågade hon vad vi ville beställa, och i all bitterhet över att det inte fanns något jag tyckte om, beställde jag en Caesar-sallad för första gången i mitt liv, ackompanjerad av en stor öl.</p>
+            
+            <h2>Den första tuggan</h2>
+            
+            <p>Femton långa minuter senare anlände tallriken och glaset. Jag tog en försiktig tugga och… jag var frälst. Dressingen var krämig och djup, det krispiga baconet perfekt stekt. Den varma kycklingen, den absurda mängden parmesan, cocktailtomaterna och rödlöken – en oväntad men välkommen gäst. Jag var såld.</p>
+            
+            <h2>En evig kärlek växer fram</h2>
+            
+            <p>Efter det började en evig kärlek växa fram till denna underbara rätt. De dagar vi var kvar i Torrevieja gick jag till Nova Paka och åt lunch – samma rätt, samma öl, samma gastronomiska eufori. Men ett år senare kom coronapandemin.</p>
+        
+            <p>På omvägar fick jag höra den tragiska nyheten: Tjeckiska Eva Röses restaurang inte överlevde pandemin, och utan turister gick det helt enkelt inte. Med Nova Paka försvann även den bästa Caesar-salladen denna planet har sett.</p>
+        
+            <h2>Jakten på den perfekta Caesar Salladen</h2>
+        
+            <p>Efter Nova Paka har jakten på den perfekta Caesar-salladen fortsatt. Jag har testat hundratals varianter i olika länder och städer, men ingen har nått samma höjder. Några har kommit nära, men det sista steget mot perfektion har alltid saknats.</p>
+        
+            <h3>Vem har varit närmast?</h3>
+            
+            <p>Det finns starka utmanare:</p>
+            <ul>
+                <li><strong>Fratelli i Örebro:</strong> Den bästa i Sverige – tills restaurangen brann ner och tog sin Caesar-sallad med sig. Fratelli återuppstod på en ny adress, men receptet förändrades – till hela Närkeslättens stora förtret.</li>
+                <li><strong>Fuengirola, Spanien:</strong> En restaurang där jag åt den bästa Caesar-salladen utomlands. Jag åt den bara en gång, men det räckte för att göra avtryck.</li>
+            </ul>
+            
+            <p>Två av världens bästa Caesar-sallader har alltså gått förlorade. Jakten fortsätter.</p>
+            
+            <h2>Vägen till perfektion</h2>
+            
+            <p>Dagen jag hittar den perfekta Caesar-salladen igen, läggs denna sida ner.</p>
+        
+            <!-- <a href="" class="hero-btn">Se vart världens bästa Caesar Sallad finns!</a> -->
+        </div>
+        
+    </section>
+
+    
+
+<section class="footer">
+    <div class="socialmedia">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-x"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <ul class="list">
+        <li>
+            <a href="#">Hem</a>
+
+        </li>
+        <li>
+            <a href="#">Om oss</a>
+        </li>
+        <li>
+            <a href="#">Tjänster</a>
+        </li>
+        <li>
+            <a href="#">Våra projekt</a>
+        </li>
+        <li>
+            <a href="#">ROT-Avdrag</a>
+        </li>
+        <li>
+            <a href="#">Kontakta oss</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        Max Hedström © 2025
+    </p>
+</section>
+   <!-- JAVASCRIPT NEDAN -->
+    <script>
+        //funktion för att få responsiv meny att visas och gömmas korrekt.
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-220px";
+        }
+    </script>
+</body>
+</html>

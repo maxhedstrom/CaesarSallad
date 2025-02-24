@@ -1,0 +1,269 @@
+/* CSS TEMPLATE Max Hedström © 2025 */
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Overpass+Mono:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Finger Paint", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('/bilder/novapaka.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-top: -90px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #30bd5a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Textbox styling */
+.textbox {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+
+    border: 2px solid #ccc; /* Ljusa kanter för en mer modern känsla */
+    border-radius: 12px; /* Mer rundade hörn */
+    padding: 40px;
+    margin: 0 auto; /* Ta bort bottom margin */
+    max-width: 70%; /* Mer komprimerad på större skärmar */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Större och mjukare skuggor */
+    position: relative;
+    overflow: hidden; /* För att undvika att element sticker ut utanför boxen */
+    transition: all 0.3s ease; /* Mjuk övergång för interaktivitet */
+}
+
+.textbox:hover {
+    transform: translateY(-10px); /* Lite lyftande effekt på hover */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); /* Större skugga vid hover */
+}
+
+/* Gradient på boxens bakgrund */
+.textbox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    z-index: -1; /* Gör att gradienten ligger bakom texten */
+    border-radius: 12px;
+}
+
+/* Text inuti boxen */
+.textbox h1, .textbox h2, .textbox h3 {
+    color: #222;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase; /* Rubriker i versaler */
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+/* Stylistiskt brödtext */
+.textbox p {
+    color: #555; /* Mjukare färg på texten för bättre läsbarhet */
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center; /* Justerad text för att få en jämnare textlayout */
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Lättare textskugga för kontrast */
+}
+
+/* Lägg till en linje under rubriker */
+.textbox h1::after, .textbox h2::after, .textbox h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #30bd5a; /* Röd linje under rubriker */
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+nav .fa {
+    display: none;
+}
+
+/* ------------------Footer----------------- */
+.footer {
+    margin: 0;
+    padding: 40px 0;
+    box-sizing: border-box;
+    background-color: #153F59;
+}
+
+.footer .socialmedia {
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+
+.footer .socialmedia a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .socialmedia a:hover {
+    opacity: 20;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    color: blue;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* Mobilvänlig layout */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer div {
+        margin-bottom: 20px;
+    }
+}
+
+/* ----------------MEDIA QUERY---------------- */
+
+@media(max-width:700px){
+    #logo {
+        width: 80px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: auto;
+        width: 200px;
+        margin-top: 150px;
+        right: -220px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    .textbox h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .geografikolumn img {
+        height: 60vh;
+        object-position:center ;
+    }
+
+    .layer h3 {
+        opacity: 2;
+    }
+}
