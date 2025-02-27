@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Världens bästa Caesar Sallad</title>
+    <link rel="stylesheet" href="../style/konstruktion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img id="logo" src="/bilder/logo.png" alt="Logotyp"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="varfor.html">Varför?</a></li>
+                    <li><a href="topplista.html">Topplista</a></li>
+                    <li><a href="recept.html">Det ultimata receptet</a></li>
+                    <li><a href="salladOchEnKall.html">Caesarsallad och en kall</a></li>
+                    <li><a href="blogg.html">Senaste salladen/Salladsbloggen</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+
+        </nav>
+        <div class="textbox">
+            <h1>DENNA SIDA ÄR UNDER KONSTRUKTION!</h1>
+            
+        
+            <a href="index.html" class="hero-btn">Tillbaka till indexsida!</a>
+        </div>
+        
+    </section>
+
+    
+
+<section class="footer">
+    <div class="socialmedia">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-x"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <ul class="list">
+        <li>
+            <a href="#">Hem</a>
+
+        </li>
+        <li>
+            <a href="#">Om oss</a>
+        </li>
+        <li>
+            <a href="#">Tjänster</a>
+        </li>
+        <li>
+            <a href="#">Våra projekt</a>
+        </li>
+        <li>
+            <a href="#">ROT-Avdrag</a>
+        </li>
+        <li>
+            <a href="#">Kontakta oss</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        Max Hedström © 2025
+    </p>
+</section>
+   <!-- JAVASCRIPT NEDAN -->
+    <script>
+        //funktion för att få responsiv meny att visas och gömmas korrekt.
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-220px";
+        }
+    </script>
+</body>
+</html>
