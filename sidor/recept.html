@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Världens bästa Caesar Sallad</title>
-    <link rel="stylesheet" href="../style/konstruktion.css">
+    <link rel="icon" href="https://fav.farm/✅" />
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../style/recept.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -12,35 +14,58 @@
 </head> 
 
 <body>
-    
-    <section class="header">
-        <nav>
-            <a href="index.html"><img id="logo" src="/bilder/logo.png" alt="Logotyp"></a>
-            
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">Hem</a></li>
-                    <li><a href="varfor.html">Varför?</a></li>
-                    <li><a href="topplista.html">Topplista</a></li>
-                    <li><a href="recept.html">Det ultimata receptet</a></li>
-                    <li><a href="salladOchEnKall.html">Caesarsallad och en kall</a></li>
-                    <li><a href="blogg.html">Senaste salladen/Salladsbloggen</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars"  onclick="showMenu()"></i>
+    <a href="index.html"><img id="logo" src="/bilder/logo.png" alt="Logotyp"></a>
 
-        </nav>
-        <div class="textbox">
-            <h1>DENNA SIDA ÄR UNDER KONSTRUKTION!</h1>
-            
-        
-            <a href="index.html" class="hero-btn">Tillbaka till indexsida!</a>
-        </div>
-        
-    </section>
+  <div class="panels">
+    <div class="panel panel1">
+      <p>Parmesan</p>
+      <p>Alla</p>
+      <p>Parmesan</p>
+    </div>
+    <div class="panel panel2">
+      <p>Ceasar</p>
+      <p>Recept</p>
+      <p>Dressing</p>
+    </div>
+    <div class="panel panel3">
+      <p>grillad eller friterad</p>
+      <p>Har</p>
+      <!-- <p>Tryck på oss för att veta mer</p> -->
+      <p>kyckling</p>
+    </div>
+    <div class="panel panel4">
+      <p>Roman</p>
+      <p>Dessa</p>
+      <p>Sallad</p>
+    </div>
+    <div class="panel panel5">
+      <p>Gyllenebruna</p>
+      <p>Fem</p>
+      <p>krutonger</p>
+    </div>
+  </div>
 
-    
+  <script>
+    const panels = document.querySelectorAll('.panel');
+
+    function toggleOpen() {
+      console.log('Hello');
+      this.classList.toggle('open');
+    }
+
+    function toggleActive(e) {
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  </script>
+
+</body>
+</html>
 
 <section class="footer">
     <div class="socialmedia">
@@ -51,7 +76,7 @@
     </div>
     <ul class="list">
         <li>
-            <a href="#">Hem</a>
+            <a href="index.html">Hem</a>
 
         </li>
         <li>
